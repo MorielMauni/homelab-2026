@@ -5,6 +5,18 @@ Making on a VM on my Proxmox machine.
 
 ### Updates
 
+**5/1/26 Updates:**
+Deployed first app: Linkding
+Created files:
+
+- `clusters/staging/apps.yaml`
+- `/apps/staging/linkding/`
+- `apps/base/linkding/`
+  - `linkding/deployment.yaml`
+  - `linkding/kustomization.yaml`
+  - `linkding/namespace.yaml`
+  - `linkding/storage.yaml`
+
 **4/1/26 Updates:**
 Starting point:
 
