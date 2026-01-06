@@ -5,8 +5,14 @@ Making on a VM on my Proxmox machine.
 
 ### Updates
 
+**6/1/26 Updates:**
+
+- Added `linkding/storage.yaml` as a PVC.
+- Updated `linkding/deployment.yaml` to list the storage.
+
 **5/1/26 Updates:**
-Deployed first app: Linkding
+Deployed first app: Linkding.
+
 Created files:
 
 - `clusters/staging/apps.yaml`
@@ -15,7 +21,6 @@ Created files:
   - `linkding/deployment.yaml`
   - `linkding/kustomization.yaml`
   - `linkding/namespace.yaml`
-  - `linkding/storage.yaml`
 
 **4/1/26 Updates:**
 Starting point:
@@ -32,3 +37,4 @@ Starting point:
 - DevContainers
 - Linux
 - GitOps
+- kubectx
