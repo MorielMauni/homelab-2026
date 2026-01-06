@@ -6,6 +6,7 @@ Making on a VM on my Proxmox machine.
 ### Updates
 
 **6/1/26 Updates:**
+
 Storage:
 
 - Added `linkding/storage.yaml` as a PVC.
@@ -15,6 +16,11 @@ Security:
 
 - Pod using 'www-data' user and not root.
 - Removed `Privilege Escalation`.
+
+CloudFlare:
+
+- Created tunnels for CloudFlare through CloudFlared.
+- Created `app/base/linkding/service,yaml`
 
 **5/1/26 Updates:**
 Deployed first app: Linkding.
@@ -29,11 +35,12 @@ Created files:
   - `linkding/namespace.yaml`
 
 **4/1/26 Updates:**
+
 Starting point:
 
-- Created a '.devcontinaer.json'.
-- Installed 'brew'.
-- Installed 'flux'.
+- Created a `.devcontinaer.json`.
+- Installed `brew`.
+- Installed `flux`.
   - Bootstrap flux to the cluster.
 
 ### Tech Slack
@@ -44,3 +51,4 @@ Starting point:
 - Linux
 - GitOps
 - kubectx
+- CloudFlare: tunnels
