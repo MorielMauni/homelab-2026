@@ -10,6 +10,13 @@ Making on a VM on my Proxmox machine.
 - Installed:
   - `brew install sops`
   - `brew install age`
+- Created `clusters/staging/.sops.yaml` to point the encryption.
+- Edited `clusters/staging/apps.yaml` to know to decrypt SOPS
+- Re-deployed linkding with SOPS:
+  - Created a secret for CloudFlare `cloudflare-secret.yaml`.
+  - Created a secret for linkding user `linkding-container-env-secret.yaml`.
+
+linkding was Re-deployed with secrets now.
 
 **6/1/26 Updates:**
 
@@ -28,6 +35,7 @@ CloudFlare:
 - Created tunnels for CloudFlare through CloudFlared.
 - Created `app/base/linkding/service,yaml`
 
+First app was deployed! linkding is up on the web.
 **5/1/26 Updates:**
 Deployed first app: Linkding.
 
@@ -51,11 +59,11 @@ Starting point:
 
 ### Tech Slack
 
-- K3S
-- FluxCD
-- DevContainers
+- K3S: core.
+- FluxCD: GitOps options of choice.
+- DevContainers: working environment.
 - Linux
-- GitOps
+- GitOps: method of work.
 - kubectx
 - CloudFlare: tunnels
 - SOPS: encrypt secrets in Kubernetes.
