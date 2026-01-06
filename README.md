@@ -5,6 +5,12 @@ Making on a VM on my Proxmox machine.
 
 ### Updates
 
+**7/1/26 Updates:**
+
+- Installed:
+  - `brew install sops`
+  - `brew install age`
+
 **6/1/26 Updates:**
 
 Storage:
@@ -52,3 +58,4 @@ Starting point:
 - GitOps
 - kubectx
 - CloudFlare: tunnels
+- SOPS: encrypt secrets in Kubernetes.
