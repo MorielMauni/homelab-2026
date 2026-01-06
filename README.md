@@ -6,9 +6,15 @@ Making on a VM on my Proxmox machine.
 ### Updates
 
 **6/1/26 Updates:**
+Storage:
 
 - Added `linkding/storage.yaml` as a PVC.
 - Updated `linkding/deployment.yaml` to list the storage.
+
+Security:
+
+- Pod using 'www-data' user and not root.
+- Removed `Privilege Escalation`.
 
 **5/1/26 Updates:**
 Deployed first app: Linkding.
