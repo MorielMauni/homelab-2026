@@ -5,6 +5,30 @@ Making on a VM on my Proxmox machine.
 
 ### Updates
 
+**8-9/1/26 Updates:**
+
+Adding Prometheus monitoring with Helm:
+files tree:
+
+```
+monitoring
+├── configs
+└── controllers
+    ├── base
+    │   └── kube-prometheuse-stack
+    │       ├── kustomization.yaml
+    │       ├── namespace_1.yaml
+    │       ├── release.yaml
+    │       └── repository.yaml
+    └── staging
+        ├── kube-prometheuse-stack
+        │   └── kustomization.yaml
+        └── kustomization.yaml
+
+```
+
+- Added `/clusters/staging/monitoring.yaml`
+
 **7/1/26 Updates:**
 
 - Installed:
