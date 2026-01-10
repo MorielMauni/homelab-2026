@@ -1,4 +1,12 @@
-./.json/
-*/.json/
-./*/*.json
-./tls.*
+# Age encryption keys
+age.agekey
+
+# TLS certificates and keys
+tls.crt
+tls.key
+
+# Mise configuration
+mise.toml
+
+# JSON directory
+.json/
