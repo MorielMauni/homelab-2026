@@ -5,6 +5,13 @@ Making on a VM on my Proxmox machine.
 
 ### Updates
 
+**10/1/26 Updates:**
+
+- Edited `monitoring/controllers/base/kube-prometheuse-stack/release.yaml` to have ingress.
+- Added `monitoring/configs/staging/kube-prometheuse-stack/grafana-tlc-secret.yaml`
+- Added `monitoring/configs/staging/kube-prometheuse-stack/staging/kustomization.yaml`
+- Added `monitoring/configs/staging/kustomization.yaml`
+- Edited `/clusters/flux-system/monitoring.yaml`
 **8-9/1/26 Updates:**
 
 Adding Prometheus monitoring with Helm:
@@ -17,7 +24,7 @@ monitoring
     ├── base
     │   └── kube-prometheuse-stack
     │       ├── kustomization.yaml
-    │       ├── namespace_1.yaml
+    │       ├── namespace.yaml
     │       ├── release.yaml
     │       └── repository.yaml
     └── staging
