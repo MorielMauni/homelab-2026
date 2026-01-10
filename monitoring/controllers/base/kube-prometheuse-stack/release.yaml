@@ -29,3 +29,15 @@ spec:
   values:
     grafana:
       adminPassword: moriel
+
+      ingress:
+        enabled: true
+        ingressClassName: traefik
+
+        hosts:
+          - grafana.morielclouds.com
+
+        tls:
+          - secretName: grafana-tls-secret
+            hosts:
+              - grafana.morielclouds.com
