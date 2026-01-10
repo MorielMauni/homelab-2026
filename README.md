@@ -17,21 +17,27 @@ Making on a VM on my Proxmox machine.
 Adding Prometheus monitoring with Helm:
 files tree:
 
+Fixed file tree with all the updates from 8/1/26 to 10/1/26
+
 ```
 monitoring
 ├── configs
+│   └── staging
+│       ├── kube-prometheus-stack
+│       │   ├── grafana-tls-secret.yaml
+│       │   └── kustomization.yaml
+│       └── kustomization.yaml
 └── controllers
     ├── base
-    │   └── kube-prometheuse-stack
+    │   └── kube-prometheus-stack
     │       ├── kustomization.yaml
     │       ├── namespace.yaml
     │       ├── release.yaml
     │       └── repository.yaml
     └── staging
-        ├── kube-prometheuse-stack
+        ├── kube-prometheus-stack
         │   └── kustomization.yaml
         └── kustomization.yaml
-
 ```
 
 - Added `/clusters/staging/monitoring.yaml`
