@@ -5,13 +5,39 @@ Making on a VM on my Proxmox machine.
 
 ### Updates
 
+**11/1/26 Updates:**
+File tree for infrastructure:
+
+```
+infrastructure
+└── controllers
+    ├── base
+    │   ├── kustomization.yaml
+    │   └── renovate
+    │       ├── configmap.yaml
+    │       ├── cronjob.yaml
+    │       ├── kustomization.yaml
+    │       ├── namespace.yaml
+    │       └── renovate-container-env.yaml
+    └── staging
+        ├── kustomization.yaml
+        └── renovate
+            └── kustomization.yaml
+
+ 
+```
+
+- Added in root directory `renovate.json`.
+- Added in `/cluster/staging/infrastructure.yaml`.
+
 **10/1/26 Updates:**
 
 - Edited `monitoring/controllers/base/kube-prometheuse-stack/release.yaml` to have ingress.
-- Added `monitoring/configs/staging/kube-prometheuse-stack/grafana-tlc-secret.yaml`
-- Added `monitoring/configs/staging/kube-prometheuse-stack/staging/kustomization.yaml`
-- Added `monitoring/configs/staging/kustomization.yaml`
-- Edited `/clusters/flux-system/monitoring.yaml`
+- Added `monitoring/configs/staging/kube-prometheuse-stack/grafana-tlc-secret.yaml`.
+- Added `monitoring/configs/staging/kube-prometheuse-stack/staging/kustomization.yaml`.
+- Added `monitoring/configs/staging/kustomization.yaml`.
+- Edited `/clusters/flux-system/monitoring.yaml`.
+
 **8-9/1/26 Updates:**
 
 Adding Prometheus monitoring with Helm:
@@ -102,5 +128,6 @@ Starting point:
 - Linux
 - GitOps: method of work.
 - kubectx
-- CloudFlare: tunnels
+- CloudFlare: tunnels.
 - SOPS: encrypt secrets in Kubernetes.
+- renovate: Automated dependency updates.
