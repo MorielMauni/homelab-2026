@@ -5,7 +5,33 @@ Making on a VM on my Proxmox machine.
 
 ### Updates
 
+**12/1/26 Updates:**
+
+File tree for database:
+
+```
+database
+└── controllers
+    ├── base
+    │   ├── cloudnative
+    │   │   ├── cluster.yaml
+    │   │   ├── kustomization.yaml
+    │   │   └── namespace.yaml
+    │   └── kustomization.yaml
+    └── staging
+        ├── cloudnative
+        │   └── kustomization.yaml
+        └── kustomization.yaml
+```
+
+- Added in `/cluster/staging/database.yaml`.
+
+Still in testing, I'm not going to be sure what I will do with that.
+
+Also, I I'm not sure what apps I want in the cluster. I already have a Proxmox (Most of my apps are there) server and Nextcloud server that I use.
+
 **11/1/26 Updates:**
+
 File tree for infrastructure:
 
 ```
@@ -14,7 +40,7 @@ infrastructure
     ├── base
     │   ├── kustomization.yaml
     │   └── renovate
-    │       ├── configmap.yaml
+     │       ├── configmap.yaml
     │       ├── cronjob.yaml
     │       ├── kustomization.yaml
     │       ├── namespace.yaml
